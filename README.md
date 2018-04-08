@@ -6,7 +6,15 @@ with an API.
 
 # How to use it
 
+First, install the application from npm:
+
+`npm install movie-diversity`
+
+Then,
+
 ![Example Call](example.png)
+
+You can also `git clone https://github.com/jmahabal/movie-diversity-cli.git` and then run `npm install` in the directory to use it locally.
 
 # How it works
 
