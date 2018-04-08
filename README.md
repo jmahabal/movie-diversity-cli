@@ -8,13 +8,14 @@ with an API.
 
 First, install the application from npm:
 
-`npm install movie-diversity`
+`npm install movie-diversity-cli`
 
 Then,
 
 ![Example Call](example.png)
 
-You can also `git clone https://github.com/jmahabal/movie-diversity-cli.git` and then run `npm install` in the directory to use it locally.
+You can also `git clone https://github.com/jmahabal/movie-diversity-cli.git` and
+then run `npm install`.
 
 # How it works
 
