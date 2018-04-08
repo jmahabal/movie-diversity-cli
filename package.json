@@ -1,0 +1,28 @@
+{
+  "name": "movie-diversity-cli",
+  "version": "1.0.0",
+  "description": "A CLI for determining the gender diversity of a movie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movies",
+    "hollywood",
+    "diversity",
+    "inclusion",
+    "rider",
+    "gender"
+  ],
+  "author": "@JayMahabal",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.1",
+    "lodash": "^4.17.5",
+    "ora": "^2.0.0",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5",
+    "terminal-link": "^1.0.0"
+  }
+}
