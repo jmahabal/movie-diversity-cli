@@ -7,7 +7,6 @@ const chalk = require('chalk');
 const ora = require('ora');
 
 const rpn = require('request-promise-native');
-const castLimit = 20;
 const lambdaURL =
   'https://zyamfb8bg5.execute-api.us-west-1.amazonaws.com/prod/getDiversity';
 
