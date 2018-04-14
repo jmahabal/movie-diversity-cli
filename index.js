@@ -14,7 +14,7 @@ const lambdaURL =
 
 const returnMovieInfo = title => {
   console.log(
-    `You requested diversity information for ${chalk.yellow.underline(title)}.`
+    `You requested diversity information for “${title}”.`
   );
   const spinner = ora('Fetching information...').start();
 
@@ -31,13 +31,14 @@ const returnMovieInfo = title => {
       response = JSON.parse(response);
       const genders = response.genders;
       const movie = response.movie;
+      const year = response.movie.releaseDate.split('-')[0];
       spinner.text = 'Request completed.';
       spinner.succeed();
       console.log(`  Women: ${'👩🏽 '.repeat(genders.Women)}`);
       console.log(`    Men: ${'👨🏽 '.repeat(genders.Men)}`);
       console.log(`Unknown: ${'🎥 '.repeat(genders.Unknown)}`);
       console.log(
-        `You can find more information at ${chalk.blue(
+        `You can find more information about ${chalk.rgb(180,15,32).underline(movie.title)} (${chalk.rgb(180,15,32)(year)}) at ${chalk.blue(
           `https://www.themoviedb.org/movie/${movie.id}`
         )}.`
       );

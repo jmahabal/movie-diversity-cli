@@ -8,26 +8,33 @@ with an API.
 
 First, install the application from npm:
 
+![Download Instructions](download.png)
+
 `npm install movie-diversity-cli -g`
 
 Then,
 
+`movie-diversity "movie name"`
+
 ![Example Call](example.png)
+
+Here's an example response you might get:
 
 ![Result](result.png)
 
 # How it works
 
 The process of creating an 'analysis' kicks off with a movie title. This title
-is fed into the MovieDB search API, after which the bot selects the movie that
-is the first result. Once there is a movie associated with the request, the
-function grabs the cast members and aggregates the genders of the first 20 cast
-members. The cast members are billed accordingly to importance, so choosing the
-top 20 should lead to a accurate study, as minor characters with little screen
-time are not as relevant (though definitely still important!) The output
-distribution is then displayed to the user.
+is fed into the MovieDB search API after which the bot selects the first movie
+listed. Once there is a movie associated with the request, the program grabs the
+cast members and aggregates the genders of the first 20 cast members. The cast
+members are billed according to importance, so choosing the top 20 should lead
+to a accurate study, as minor characters with little screen time are not as
+relevant (though definitely still important!) The output distribution is then
+displayed to the user.
 
-This CLI makes a call to an Amazon Lambda URL, where the above process runs.
+This CLI makes a call to an Amazon Lambda function, which where the above
+process runs.
 
 # The future
 
