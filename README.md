@@ -7,10 +7,12 @@ with an API.
 # How to use it
 
 You can install the application from npm with the command `npm install
-movie-diversity-cli -g` ![Download Instructions](download.png)
+movie-diversity-cli -g`. ![Download Instructions](download.png)
 
-Then to actually use the script you can call by `movie-diversity "movie name"`
+
+Then to actually use the script you can call it by `movie-diversity "movie name"`.
 ![Example Call](example.png)
+
 
 Here's an example response you might get: ![Result](result.png)
 
