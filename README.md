@@ -9,10 +9,8 @@ with an API.
 You can install the application from npm with the command `npm install
 movie-diversity-cli -g`. ![Download Instructions](download.png)
 
-
-Then to actually use the script you can call it by `movie-diversity "movie name"`.
-![Example Call](example.png)
-
+Then to actually use the script you can call it by `movie-diversity "movie
+name"`. ![Example Call](example.png)
 
 Here's an example response you might get: ![Result](result.png)
 
@@ -28,7 +26,9 @@ relevant (though definitely still important!) The output distribution is then
 displayed to the user.
 
 This CLI makes a call to an Amazon Lambda function, which where the above
-process runs. You can see code for that process under `lambda/`.
+process runs. You can see code for that process under `lambda/`. If you do
+decide to run the Lambda code, you'll need to grab your own API key from the
+MovieDB.
 
 # The future
 
