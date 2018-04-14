@@ -7,12 +7,15 @@ with an API.
 # How to use it
 
 You can install the application from npm with the command `npm install
-movie-diversity-cli -g`. <img width="320" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/result.png" alt="Download Instructions">
+movie-diversity-cli -g`.
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/download.png" alt="Download Instructions">
 
 Then to actually use the script you can call it by `movie-diversity "movie
-name"`. ![Example Call](example.png)
+name"`.
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/example.png" alt="Example Call">
 
-Here's an example response you might get: ![Result](result.png)
+Here's an example response you might get:
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/result.png" alt="Result">
 
 # How it works
 
