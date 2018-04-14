@@ -7,19 +7,12 @@ with an API.
 # How to use it
 
 First, install the application from npm:
-
 ![Download Instructions](download.png)
-
 `npm install movie-diversity-cli -g`
-
-Then,
-
+Then to actually use the script,
 `movie-diversity "movie name"`
-
 ![Example Call](example.png)
-
 Here's an example response you might get:
-
 ![Result](result.png)
 
 # How it works
@@ -34,13 +27,12 @@ relevant (though definitely still important!) The output distribution is then
 displayed to the user.
 
 This CLI makes a call to an Amazon Lambda function, which where the above
-process runs.
+process runs. You can see code for that process under `lambda/`. 
 
 # The future
 
 * Expand analysis to include ethnicity information as well, in addition to other
   groups
-* Automate uploading to AWS, allowing for others to contribute to that function
 
 # Credits
 
