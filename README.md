@@ -11,11 +11,17 @@ movie-diversity-cli -g`.
 <img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/download.png" alt="Download Instructions">
 
 Then to actually use the script you can call it by `movie-diversity "movie
-name"`.
+name"`. If you're searching for a movie with multiple words in the title you'll
+need to surround the title with quotes.
 <img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/example.png" alt="Example Call">
 
 Here's an example response you might get:
 <img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/result.png" alt="Result">
+
+If you don't want to install it globally you can use `npx` to create a temporary
+install: `npx movie-diversity-cli "movie name"`.
+
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/npx.png" alt="Using npx">
 
 # How it works
 
@@ -37,6 +43,8 @@ MovieDB.
 
 * Expand analysis to include ethnicity information as well, in addition to other
   groups
+* Have more detailed error messages, including ones for when the movie was
+  actually found, but did not have enough cast members for an analysis
 
 # Credits
 
