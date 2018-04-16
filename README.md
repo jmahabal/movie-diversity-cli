@@ -48,6 +48,10 @@ MovieDB.
 
 # Credits
 
-![The Movie DB](themoviedb.png)
+I'd like to thank Tim Pettersen for their
+[tutorial](https://developer.atlassian.com/blog/2015/11/scripting-with-node/) on
+how to build a CLI tool in Node. Also, thank you again to
+[The Movie DB](https://www.themoviedb.org/documentation/api) for providing such
+a great API.
 
-[The Movie DB](https://www.themoviedb.org/documentation/api)
+![The Movie DB](themoviedb.png)
