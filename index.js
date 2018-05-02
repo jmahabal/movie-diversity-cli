@@ -8,6 +8,12 @@ const program = require("commander");
 const returnMovieInfo = require("./returnMovieInfo");
 const returnRandomMovie = require("./returnRandomMovie");
 
+const handleRandomMovie = () => {
+  returnRandomMovie()
+    .then(response => returnMovieInfo(response))
+    .catch(error => console.log(error));
+};
+
 // CLI program
 
 program
@@ -21,8 +27,8 @@ program
 
 program
   .command("random")
-  .description("get the results back for a random top 100 movie")
-  .action(() => console.log("random"));
+  .description("get the results back for a random, popular movie")
+  .action(() => handleRandomMovie());
 
 program
   .command("help")
@@ -32,5 +38,5 @@ program
 program.parse(process.argv);
 
 if (!program.args.length) {
-  console.log("Selecting a random movie for you.");
+  handleRandomMovie();
 }
