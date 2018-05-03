@@ -7,6 +7,7 @@ with an API.
 # How to use it
 
 You can install the application globally on your system from npm with the command `npm install movie-diversity-cli -g`.
+
 <img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/download.png" alt="Download Instructions">
 
 Then to actually use the script you can call it by `movie-diversity get "movie name"`. 
@@ -19,6 +20,7 @@ Here's an example response you might get:
 
 You can also get a random movie by `movie-diversity random`. Omitting arguments 
 to the function will also result in this call.
+
 <img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/random.png" alt="example call for a random movie">
 
 If you don't want to install it globally you can use `npx` to create a temporary 
@@ -42,11 +44,11 @@ should lead to a accurate study, as minor characters with little screen time
 are not as relevant (though definitely still important!) The output distribution 
 is then displayed to the user.
 
-For picking a random movie the program makes a call to a [Datasette]() JSON API 
-with a list of a 100 poopular movies. From there it filters the list 
-to only movies from after 1975, in order to make sure that we have enough data for 
-an analysis. It then picks a random movie from that list and feeds it into 
-the main function.
+For picking a random movie the program makes a call to a 
+[Datasette](https://github.com/simonw/datasette) JSON API with a list of a 100 
+popular movies. From there it filters the list to only movies from after 1975, in 
+order to make sure that we have enough data for an analysis. It then picks a random 
+movie from that list and feeds it into the main function.
 
 # The future
 
@@ -63,4 +65,4 @@ how to build a CLI tool in Node. Also, thank you again to
 [The Movie DB](https://www.themoviedb.org/documentation/api) for providing such
 a useful API.
 
-![The Movie DB](themoviedb.png)
+<img width="240" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/themoviedb.png" alt="the movie db">
