@@ -13,9 +13,11 @@ You can install the application globally on your system from npm with the comman
 Then to actually use the script you can call it by `movie-diversity get "movie name"`. 
 If you're searching for a movie with multiple words in the title you'll need to 
 surround the title with quotes.
+
 <img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/example.png" alt="example call">
 
 Here's an example response you might get:
+
 <img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/result.png" alt="response">
 
 You can also get a random movie by `movie-diversity random`. Omitting arguments 
@@ -60,9 +62,9 @@ movie from that list and feeds it into the main function.
 # Credits
 
 I'd like to thank Tim Pettersen for their
-[tutorial](https://developer.atlassian.com/blog/2015/11/scripting-with-node/) on
-how to build a CLI tool in Node. Also, thank you again to
-[The Movie DB](https://www.themoviedb.org/documentation/api) for providing such
-a useful API.
+[tutorial](https://developer.atlassian.com/blog/2015/11/scripting-with-node/) on 
+how to build a CLI tool in Node, [The Movie DB](https://www.themoviedb.org/documentation/api) 
+for providing such a useful API, and [Carbon](carbon.now.sh) for providing an easy way to 
+create instruction images.
 
-<img width="240" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/themoviedb.png" alt="the movie db">
+<img width="160" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/themoviedb.png" alt="the movie db">
