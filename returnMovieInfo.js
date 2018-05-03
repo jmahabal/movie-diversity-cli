@@ -1,9 +1,10 @@
-const chalk = require("chalk");
 const ora = require("ora");
 const rpn = require("request-promise-native");
 
 const movieTitleColor = require("./chalkSettings").movieTitleColor;
 const linkColor = require("./chalkSettings").linkColor;
+
+// See the `/lambda` folder for how this endpoint works
 
 const lambdaURL =
   "https://zyamfb8bg5.execute-api.us-west-1.amazonaws.com/prod/getDiversity";
@@ -41,7 +42,7 @@ const returnMovieInfo = title => {
       );
     })
     .catch(e => {
-      spinner.text = `Sorry, I was not able to get diversity information about the movie.`;
+      spinner.text = `Sorry, I was unable to get diversity information about the movie.`;
       spinner.fail();
     });
 };

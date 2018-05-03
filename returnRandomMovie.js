@@ -10,15 +10,15 @@ const movieTitleColor = require("./chalkSettings").movieTitleColor;
 const topMoviesURI =
   "https://datasette-rnfchsmpdy.now.sh/csv-data-260033e.json?sql=select+*+from+movies+where+Year+%3E+1975";
 
+const options = {
+  method: "GET",
+  uri: topMoviesURI
+};
+
 const returnRandomMovie = () => {
   // Resolve the promise with the title of a random movie
   return new Promise((resolve, reject) => {
     const spinner = ora("Getting a random movie...").start();
-
-    const options = {
-      method: "GET",
-      uri: topMoviesURI
-    };
 
     rpn(options)
       .then(response => {
@@ -31,9 +31,9 @@ const returnRandomMovie = () => {
         resolve(randomMovie[0]);
       })
       .catch(e => {
-        spinner.text = `Could not get a random movie: ${e}`;
+        spinner.text = `Sorry, I couldn't fetch a random film.`;
         spinner.fail();
-        reject(`Sorry, I couldn't fetch a random film.`);
+        reject();
       });
   });
 };

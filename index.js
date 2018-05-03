@@ -11,7 +11,9 @@ const returnRandomMovie = require("./returnRandomMovie");
 const handleRandomMovie = () => {
   returnRandomMovie()
     .then(response => returnMovieInfo(response))
-    .catch(error => console.log(error));
+    .catch(error => {
+      // console.log(error);
+    });
 };
 
 // CLI program
@@ -32,7 +34,7 @@ program
 
 program
   .command("help")
-  .description("outputs from the --help function")
+  .description("same as the --help function")
   .action(() => program.help());
 
 program.parse(process.argv);
