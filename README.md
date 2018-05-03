@@ -64,7 +64,7 @@ movie from that list and feeds it into the main function.
 I'd like to thank Tim Pettersen for their
 [tutorial](https://developer.atlassian.com/blog/2015/11/scripting-with-node/) on 
 how to build a CLI tool in Node, [The Movie DB](https://www.themoviedb.org/documentation/api) 
-for providing such a useful API, and [Carbon](carbon.now.sh) for providing an easy way to 
+for providing such a useful API, and [Carbon](https://carbon.now.sh/) for providing an easy way to 
 create instruction images.
 
 <img width="160" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/themoviedb.png" alt="the movie db">
