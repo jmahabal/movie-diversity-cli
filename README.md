@@ -8,20 +8,20 @@ with an API.
 
 You can install the application from npm with the command `npm install
 movie-diversity-cli -g`.
-<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/download.png" alt="Download Instructions">
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/download.png" alt="Download Instructions">
 
 Then to actually use the script you can call it by `movie-diversity "movie
 name"`. If you're searching for a movie with multiple words in the title you'll
 need to surround the title with quotes.
-<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/example.png" alt="Example Call">
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/example.png" alt="Example Call">
 
 Here's an example response you might get:
-<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/result.png" alt="Result">
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/result.png" alt="Result">
 
 If you don't want to install it globally you can use `npx` to create a temporary
 install: `npx movie-diversity-cli "movie name"`.
 
-<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/npx.png" alt="Using npx">
+<img width="640" src="https://raw.githubusercontent.com/jmahabal/movie-diversity-cli/master/images/npx.png" alt="Using npx">
 
 # How it works
 

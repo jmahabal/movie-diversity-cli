@@ -5,8 +5,8 @@ const program = require("commander");
 
 // Functions for getting the movie information
 
-const returnMovieInfo = require("./returnMovieInfo");
-const returnRandomMovie = require("./returnRandomMovie");
+const returnMovieInfo = require("./utils/returnMovieInfo");
+const returnRandomMovie = require("./utils/returnRandomMovie");
 
 const handleRandomMovie = () => {
   returnRandomMovie()
@@ -34,7 +34,7 @@ program
 
 program
   .command("help")
-  .description("same as the --help function")
+  .description("equivalent to --help")
   .action(() => program.help());
 
 program.parse(process.argv);

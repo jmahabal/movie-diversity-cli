@@ -1,8 +1,7 @@
 const ora = require("ora");
 const rpn = require("request-promise-native");
 
-const movieTitleColor = require("./chalkSettings").movieTitleColor;
-const linkColor = require("./chalkSettings").linkColor;
+const { movieTitleColor, linkColor } = require("./chalkSettings");
 
 // See the `/lambda` folder for how this endpoint works
 
